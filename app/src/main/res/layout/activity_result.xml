@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulation"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nama_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi Nama"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_judul"
+        />
+
+    <TextView
+        android:id="@+id/tv_negara_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi Negara"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_nama_result"
+        />
+
+    <TextView
+        android:id="@+id/tv_email_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi Email"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_negara_result"
+        />
+
+    <TextView
+        android:id="@+id/tv_account_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account has been created"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_email_result"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="LOG OUT"
+        app:cornerRadius="16dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity2"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="172dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to your account"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        />
+
+    <EditText
+        android:id="@+id/et_username_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:drawableStart="@drawable/ic_email_24"
+        android:inputType="text"
+        android:drawableTint="#1565C0"
+        android:hint="Username"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#0FC7E6"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_username_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:inputType="textPassword"
+        android:drawableTint="#2E7D32"
+        android:hint="Password"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#0FE6C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_log_in"
+        android:layout_width="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:backgroundTint="#0D44B3"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_log_in"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_up_login"
+        android:layout_width="0dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:backgroundTint="#0D44B3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
